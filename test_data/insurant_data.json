@@ -1,0 +1,11 @@
+{
+    "firstname": "Max",
+    "lastname": "Mustermann",
+    "birth_date": "05/10/1978",
+    "gender": "Male",
+    "street_address": "Test Street",
+    "country": "Germany",
+    "zip_code": "40123",
+    "city": "Essen",
+    "occupation": "Employee"
+}
