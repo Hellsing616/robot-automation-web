@@ -25,7 +25,7 @@ Enter Product Data
     Continue To Price Options
 
 Select Price Option
-    Select Price    Silver
+    Select Price    
     Continue To Send Quote
 
 Send Quote

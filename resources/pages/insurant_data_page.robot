@@ -16,7 +16,7 @@ Fill Insurant Data
     Fill Text            ${ZIP_CODE_LOCATOR}          ${ZIP_CODE}
     Fill Text            ${CITY_LOCATOR}              ${CITY}
 
-    Select Options By    ${OCCUPATION_LOCATOR} text   ${occupation}
+    Select Options By    ${OCCUPATION_LOCATOR}    text    ${occupation}
     Click    ${HOBBY_CLIFF_DIVING}
 
 Continue To Product Data
