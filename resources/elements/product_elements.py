@@ -1,0 +1,7 @@
+START_DATE = "id=startdate"
+INSURANCE_SUM = "id=insurancesum"
+MERIT_RATING = "id=meritrating"
+DAMAGE_INSURANCE = "id=damageinsurance"
+EURO_PROTECTION = "*css=label >> id=EuroProtection"
+COURTESY_CAR = "id=courtesycar"
+NEXT_PRICE_OPTION = "id=nextselectpriceoption"
