@@ -22,10 +22,8 @@ Submit Quote
 
     Click    ${SEND_EMAIL_LOCATOR}
 
-    ${body}=    Wait For    ${promise}
-
-    Log    ${body}
-
+    ${response}=    Wait For    ${promise}
+    Should Be Equal As Integers    ${response}[status]    200
 
 Verify Quote Sent
     Wait For Elements State    ${SUCCESS_MESSAGE}
