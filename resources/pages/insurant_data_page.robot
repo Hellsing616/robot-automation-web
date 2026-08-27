@@ -4,8 +4,9 @@ Variables   ../elements/insurant_elements.py
 
 *** Keywords ***
 Fill Insurant Data    
-    Fill Text    ${FIRST_NAME}    Max
-    Fill Text    ${LAST_NAME}     Corno
+    [Arguments]    ${firstname_value}=Max    ${lastname_value}=Mustermann
+    Fill Text    ${FIRST_NAME}    ${firstname_value}
+    Fill Text    ${LAST_NAME}     ${lastname_value}    
     Fill Text    ${BIRTH_DATE}    05/10/1978
     Check Checkbox    ${GENDER_MALE}
     Fill Text    ${STREET_ADDRESS}    Test Street
