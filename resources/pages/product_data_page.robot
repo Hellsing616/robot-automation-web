@@ -2,17 +2,21 @@
 Library     Browser
 Library     DateTime
 Variables   ../elements/product_elements.py
+Variables    ../../test_data/product_data.json
 
 *** Keywords ***
 Fill Product Data
     ${today}=    Get Current Date
     ${start_date}=    Add Time To Date    ${today}    60 days    result_format=%m/%d/%Y
-    Fill Text   id=startdate    10/25/2026
-    Select Options By    ${INSURANCE_SUM}    text    7.000.000,00
-    Select Options By    ${MERIT_RATING}    text    Bonus 1
-    Select Options By    ${DAMAGE_INSURANCE}    text    No Coverage
+
+    Fill Text    ${START_DATE_LOCATOR}    ${start_date}
+    Select Options By    ${INSURANCE_SUM_LOCATOR}       text    ${product.insurance_sum}
+    Select Options By    ${MERIT_RATING_LOCATOR}        text    ${product.merit_rating}
+    Select Options By    ${DAMAGE_INSURANCE_LOCATOR}    text    ${product.damage_insurance}
+
     Check Checkbox    ${EURO_PROTECTION}
-    Select Options By    ${COURTESY_CAR}    text    Yes
+
+    Select Options By    ${COURTESY_CAR_LOCATOR}        text    ${product.courtesy_car}
 
 Continue To Price Options
     Click    ${NEXT_PRICE_OPTION}

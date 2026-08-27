@@ -1,22 +1,31 @@
 *** Settings ***
-Library     Browser
-Variables   ../elements/quote_elements.py
+Library    Browser
+Variables    ../elements/quote_elements.py
+Variables    ../../test_data/quote_data.json
+
 
 *** Keywords ***
+
 Fill Quote Data
-    Fill Text    ${EMAIL}             max.mustermann@example.com
-    Fill Text    ${PHONE}             0049201123456
-    Fill Text    ${USERNAME}          max.mustermann
-    Fill Text    ${PASSWORD}          SecretPassword123!
-    Fill Text    ${CONFIRM_PASSWORD}  SecretPassword123!
-    Fill Text    ${COMMENTS}          Some comments
+    Fill Text    ${EMAIL_LOCATOR}              ${quote.email}
+    Fill Text    ${PHONE_LOCATOR}              ${quote.phone}
+    Fill Text    ${USERNAME_LOCATOR}           ${quote.username}
+    Fill Text    ${PASSWORD_LOCATOR}           ${quote.password}
+    Fill Text    ${CONFIRM_PASSWORD_LOCATOR}   ${quote.confirm_password}
+    Fill Text    ${COMMENTS_LOCATOR}           ${quote.comments}
+
 
 Submit Quote
-    ${promise}=    Promise To    Wait For Response    matcher=${QUOTE_RESPONSE_URL}    timeout=15
-    Click    ${SEND_EMAIL}
+    ${promise}=    Promise To    Wait For Response
+    ...    matcher=${QUOTE_RESPONSE_URL}
+    ...    timeout=15
+
+    Click    ${SEND_EMAIL_LOCATOR}
+
     ${body}=    Wait For    ${promise}
-    Log    ${body}[status]
-    Log    ${body}[body]
+
+    Log    ${body}
+
 
 Verify Quote Sent
     Wait For Elements State    ${SUCCESS_MESSAGE}

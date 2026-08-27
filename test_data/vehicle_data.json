@@ -1,0 +1,12 @@
+{
+  "vehicle": {
+    "make": "Audi",
+    "engine_performance": "110",
+    "date_of_manufacture": "06/12/1980",
+    "number_of_seats": "5",
+    "fuel": "Petrol",
+    "list_price": "30000",
+    "license_plate": "DMK1234",
+    "annual_mileage": "10000"
+  }
+}

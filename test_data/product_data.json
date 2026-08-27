@@ -1,0 +1,10 @@
+{
+  "product": {
+    "start_date": "10/25/2026",
+    "insurance_sum": "7.000.000,00",
+    "merit_rating": "Bonus 1",
+    "damage_insurance": "No Coverage",
+    "euro_protection": true,
+    "courtesy_car": "Yes"
+  }
+}

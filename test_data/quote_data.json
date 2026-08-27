@@ -1,0 +1,10 @@
+{
+  "quote": {
+    "email": "max.mustermann@example.com",
+    "phone": "0049201123456",
+    "username": "max.mustermann",
+    "password": "SecretPassword123!",
+    "confirm_password": "SecretPassword123!",
+    "comments": "Some comments"
+  }
+}
