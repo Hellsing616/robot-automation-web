@@ -88,7 +88,7 @@ O arquivo `.robot` continua sendo o ponto de entrada da execução.
 Para execução com Allure:
 
 ```bash
-robot -d results --listener allure_robotframework:results/allure tests/vehicle/create_quote.robot
+robot -d output/robot --listener allure_robotframework:output/allure-results tests/vehicle/create_quote.robot
 ```
 
 O listener oficial `allure-robotframework` coleta os resultados em um diretório de resultados do Allure. citeturn1search0turn1search1

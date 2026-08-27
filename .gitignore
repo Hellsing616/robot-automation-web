@@ -1,29 +1,101 @@
+# ================================
+
 # Robot Framework
+
+# ================================
+
+output/
 results/
-output.xml
+*.xml
 log.html
 report.html
 
+# ================================
+
+# Allure
+
+# ================================
+
+allure-results/
+allure-report/
+
+# ================================
+
 # Python
-__pycache__/
+
+# ================================
+
+**pycache**/
 *.py[cod]
+*.pyo
+*.pyd
+
 .venv/
 venv/
 env/
-*.pyc
+ENV/
 
-# IDE
-.vscode/
-.idea/
-
-# Operating system
-.DS_Store
-Thumbs.db
-
-# Playwright / Browser
-playwright-log.txt
+# ================================
 
 # Environment / secrets
+
+# ================================
+
 .env
 .env.*
 !.env.example
+
+# ================================
+
+# Playwright / Browser
+
+# ================================
+
+playwright-log.txt
+trace/
+traces/
+
+# ================================
+
+# IDE
+
+# ================================
+
+.vscode/
+.idea/
+
+# ================================
+
+# Operating System
+
+# ================================
+
+.DS_Store
+Thumbs.db
+
+# ================================
+
+# Temporary files
+
+# ================================
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# ================================
+
+# Coverage
+
+# ================================
+
+.coverage
+coverage/
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+screenshots/
