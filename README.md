@@ -92,6 +92,7 @@ robot -d results --listener allure_robotframework:results/allure tests/vehicle/c
 ```
 
 O listener oficial `allure-robotframework` coleta os resultados em um diretório de resultados do Allure. citeturn1search0turn1search1
+Install: python -m pip install allure-robotframework
 
 ## Visualizar relatório Allure
 
