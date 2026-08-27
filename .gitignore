@@ -10,6 +10,7 @@ __pycache__/
 .venv/
 venv/
 env/
+*.pyc
 
 # IDE
 .vscode/
@@ -25,3 +26,4 @@ playwright-log.txt
 # Environment / secrets
 .env
 .env.*
+!.env.example
