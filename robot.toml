@@ -1,0 +1,6 @@
+robot-automation-web/
+├── robot.toml
+├── libraries/
+├── config/
+├── resources/
+└── tests/
