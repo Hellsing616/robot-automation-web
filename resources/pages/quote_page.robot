@@ -26,5 +26,10 @@ Submit Quote
     Should Be Equal As Integers    ${response}[status]    200
 
 Verify Quote Sent
-    Wait For Elements State    ${SUCCESS_MESSAGE}
+    Wait For Elements State    ${SUCCESS_MESSAGE}    visible
+
+    ${message}=    Get Text    ${SUCCESS_MESSAGE}
+    
+    Should Be Equal    ${message}    ${EXPECTED_SUCCESS_MESSAGE}
+
     Click    ${OK_BUTTON}

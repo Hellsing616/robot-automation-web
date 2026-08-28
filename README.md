@@ -552,7 +552,12 @@ ou
 allure generate results/allure -o results/allure-report
 allure open results/allure-report
 
+# Limpar relatório Allure:
+Remove-Item -Recurse -Force output/allure-results -ErrorAction SilentlyContinue
+New-Item -ItemType Directory output/allure-results -Force
 
+# Limpar relatório Allure e executar automação:
+.\scripts\run_tests.ps1
 ---
 
 ## Resumo da arquitetura
